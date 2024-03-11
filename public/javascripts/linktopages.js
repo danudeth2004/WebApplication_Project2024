@@ -1,5 +1,5 @@
 function linkto_order(){
-    window.location.href = 'order/order';
+    window.location.href = '/order';
 }
 
 function linkto_noodles(){
