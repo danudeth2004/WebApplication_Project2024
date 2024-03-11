@@ -1,3 +1,7 @@
+function linkto_index(){
+    window.location.href = '/index';
+}
+
 function linkto_order(){
     window.location.href = '/order';
 }
