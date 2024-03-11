@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <div class="noodles-selectTH">
+      <select name="noodlesTH" id="noodlesTH">
+        <option value="">เลือกประเภทเส้น</option>
+        <% for(var count = 0; count < noodles_dataTH.length; count++) { %>
+
+          <option value="<%= noodles_dataTH[count].noodles_nameTH %>">
+          <%= noodles_dataTH[count].noodles_nameTH %></option>
+
+        <% } %>
+      </select>
+    </div>
+
+    <div class="meat-selectTH">
+      <select name="meatTH" id="meatTH">
+        <option value="">เลือกประเภทเนื้อสัตว์</option>
+        <% for(var count = 0; count < meat_dataTH.length; count++) { %>
+
+          <option value="<%= meat_dataTH[count].meat_nameTH %>">
+          <%= meat_dataTH[count].meat_nameTH %></option>
+
+        <% } %>
+      </select>
+    </div>
+
+    <div class="addon-selectTH">
+      <select name="addonTH" id="addonTH">
+        <option value="">เลือกประเภทผัก</option>
+        <% for(var count = 0; count < add_veg_dataTH.length; count++) { %>
+
+          <option value="<%= add_veg_dataTH[count].add_veg_nameTH %>">
+          <%= add_veg_dataTH[count].add_veg_nameTH %></option>
+
+        <% } %>
+      </select>
+    </div>
+
+    <div class="topping-selectTH">
+      <select name="toppingTH" id="toppingTH">
+        <option value="">เลือกประเภทท็อปปิ้ง</option>
+        <% for(var count = 0; count < topping_dataTH.length; count++) { %>
+
+          <option value="<%= topping_dataTH[count].topping_nameTH %>">
+          <%= topping_dataTH[count].topping_nameTH %></option>
+
+        <% } %>
+      </select>
+    </div>
+
+  </body>
+</html>

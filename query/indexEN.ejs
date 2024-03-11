@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <form class="select-form">
+
+    <div class="noodles-selectEN">
+      <select name="noodlesEN" id="noodlesEN">
+        <option value="">Select Noodles_Type</option>
+        <% for(var count=0; count < noodles_dataEN.length; count++) { %>
+
+          <option value="<%= noodles_dataEN[count].noodles_nameEN %>">
+            <%= noodles_dataEN[count].noodles_nameEN %>
+          </option>
+
+          <% } %>
+      </select>
+    </div>
+
+    <div class="meat-selectEN">
+      <select name="meatEN" id="meatEN">
+        <option value="">Select Meat_Type</option>
+        <% for(var count=0; count < meat_dataEN.length; count++) { %>
+
+          <option value="<%= meat_dataEN[count].meat_nameEN %>">
+            <%= meat_dataEN[count].meat_nameEN %>
+          </option>
+
+          <% } %>
+      </select>
+    </div>
+
+    <div class="addon-selectEN">
+      <select name="addonEN" id="addonEN">
+        <option value="">Select add-veg_type</option>
+        <% for(var count=0; count < add_veg_dataEN.length; count++) { %>
+
+          <option value="<%= add_veg_dataEN[count].add_veg_nameEN %>">
+            <%= add_veg_dataEN[count].add_veg_nameEN %>
+          </option>
+
+          <% } %>
+      </select>
+    </div>
+
+    <div class="topping-selectEN">
+      <select name="toppingEN" id="toppingEN">
+        <option value="">Select topping_type</option>
+        <% for(var count=0; count < topping_dataEN.length; count++) { %>
+
+          <option value="<%= topping_dataEN[count].topping_nameEN %>">
+            <%= topping_dataEN[count].topping_nameEN %>
+          </option>
+
+          <% } %>
+      </select>
+    </div>
+    
+    <button type="submit" name="save-multiple-data" class="save-button">Submit</button>
+  </form>
+
+</body>
+
+</html>
